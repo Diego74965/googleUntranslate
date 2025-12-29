@@ -1,6 +1,5 @@
-! Title: redditUntranslate
-! Description: Removes language parameters that are automatically added to Reddit URLs, ensuring redirection to original, non-translated content.
-! Expires: 7 days
-! Homepage: https://github.com/SeidSmatti/redditUntranslate
+! Title: Google Untranslate
+! Description: Removes translation parameters from Google URLs
+! Homepage: https://github.com/Diego74965/googleUntranslate
 
-$removeparam=tl,domain=reddit.com
+$removeparam=tl|_x_tr_sl|_x_tr_tl|_x_tr_hl
