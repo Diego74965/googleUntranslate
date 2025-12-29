@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Reddit Untranslate",
+  "name": "Google Untranslate",
   "version": "2.1.0",
-  "description": "Automatically redirects Reddit URLs by removing ?tl=xx from the query string + optional toggle for Google query modification",
+  "description": "Automatically redirects Google URLs by removing ?tl=xx, _x_tr_sl, _x_tr_tl, _x_tr_hl from the query string to prevent automatic translation.",
   "icons": {
     "48": "icon.png"
   },
@@ -18,8 +18,7 @@
   ],
 
   "host_permissions": [
-    "https://*.reddit.com/*",
-    "https://www.google.com/*"
+    "<all_urls>"
   ],
 
   "declarative_net_request": {
@@ -30,20 +29,5 @@
         "path": "rules.json"
       }
     ]
-  },
-
-  "content_scripts": [
-    {
-      "matches": ["*://www.google.com/search*"],
-      "js": ["content_script.js"],
-      "run_at": "document_start"
-    }
-  ],
-
-  "browser_specific_settings": {
-    "gecko": {
-      "id": "reddit-url-redirector@kichkoupi.com",
-      "strict_min_version": "113.0"
-    }
   }
 }

@@ -7,13 +7,12 @@
       "redirect": {
         "transform": {
           "queryTransform": {
-            "removeParams": ["tl"]
+            "removeParams": ["tl", "_x_tr_sl", "_x_tr_tl", "_x_tr_hl"]
           }
         }
       }
     },
     "condition": {
-      "urlFilter": "||reddit.com^",
       "resourceTypes": ["main_frame","sub_frame"]
     }
   }

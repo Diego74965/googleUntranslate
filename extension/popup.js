@@ -1,15 +1,14 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const checkbox = document.getElementById("enableGoogleAppender");
+  const checkbox = document.getElementById("filterEnabled");
+  if (!checkbox) return;
 
-  // Load saved preference
-  chrome.storage.local.get(["googleAppenderEnabled"], (data) => {
-    // If not set before, data.googleAppenderEnabled might be undefined
-    // so we convert it to a boolean
-    checkbox.checked = data.googleAppenderEnabled === true;
+  // Load saved preference (use boolean fallback)
+  chrome.storage.local.get(["filterEnabled"], (data) => {
+    checkbox.checked = data.filterEnabled === true;
   });
 
   // Update preference when user toggles checkbox
   checkbox.addEventListener("change", () => {
-    chrome.storage.local.set({ googleAppenderEnabled: checkbox.checked });
+    chrome.storage.local.set({ filterEnabled: checkbox.checked });
   });
 });
