@@ -1,7 +1,10 @@
 ---
-name: redditUntranslate
-description: Removes translated Reddit pages from search results.
-homepage: https://github.com/SeidSmatti/redditUntranslate
+name: Google Untranslate
+description: Removes translated pages from search results by filtering URLs with Google translation parameters.
+homepage: https://github.com/Diego74965/googleUntranslate
 ---
 
-*://*.reddit.com/*?tl=*
+*://*/*?*tl=*
+*://*/*?*_x_tr_sl=*
+*://*/*?*_x_tr_tl=*
+*://*/*?*_x_tr_hl=*
