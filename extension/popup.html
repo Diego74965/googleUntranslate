@@ -2,30 +2,101 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Extension Settings</title>
+    <title>Google Untranslate</title>
     <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
       body {
-        width: 250px;
-        font-family: sans-serif;
-        margin: 1em;
+        width: 320px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: #333;
+        padding: 0;
       }
-      label { 
-        display: inline-flex;
-        align-items: center;
-        cursor: pointer;
+
+      .container {
+        padding: 24px;
+        text-align: center;
       }
-      input[type="checkbox"] {
-        margin-right: 0.5em;
+
+      .icon {
+        font-size: 48px;
+        margin-bottom: 16px;
+      }
+
+      h1 {
+        font-size: 24px;
+        color: white;
+        margin-bottom: 8px;
+        font-weight: 600;
+      }
+
+      .subtitle {
+        font-size: 13px;
+        color: rgba(255, 255, 255, 0.9);
+        margin-bottom: 20px;
+        line-height: 1.4;
+      }
+
+      .status {
+        background: rgba(255, 255, 255, 0.95);
+        border-radius: 12px;
+        padding: 16px;
+        margin-bottom: 16px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      }
+
+      .status-text {
+        font-size: 14px;
+        color: #667eea;
+        font-weight: 500;
+      }
+
+      .status-indicator {
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        background: #4ade80;
+        border-radius: 50%;
+        margin-right: 8px;
+      }
+
+      .footer {
+        font-size: 11px;
+        color: rgba(255, 255, 255, 0.7);
+        padding-top: 12px;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+      }
+
+      a {
+        color: rgba(255, 255, 255, 0.9);
+        text-decoration: none;
+        transition: color 0.2s;
+      }
+
+      a:hover {
+        color: #fff;
       }
     </style>
   </head>
   <body>
-    <h2>Extension Settings</h2>
-    <div>
-      <label for="filterEnabled">
-        <input type="checkbox" id="filterEnabled" />
-        Enable filtering (remove translated Reddit results)
-      </label>
+    <div class="container">
+      <div class="icon">🌐</div>
+      <h1>Google Untranslate</h1>
+      <p class="subtitle">Removes translation parameters from URLs automatically</p>
+      
+      <div class="status">
+        <span class="status-indicator"></span>
+        <span class="status-text">Extension Active</span>
+      </div>
+
+      <div class="footer">
+        Made with ❤️ | <a href="https://github.com/Diego74965/googleUntranslate" target="_blank">GitHub</a>
+      </div>
     </div>
   </body>
 </html>

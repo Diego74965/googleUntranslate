@@ -46,9 +46,11 @@ Once installed, Google Untranslate works automatically in the background. Simply
 ### Screenshots
 
 **Web Search Results:**
+
 ![Google Untranslate web search](image-1.png)
 
 **Translation Bar Detection:**
+
 ![Translation bar in webpage](image.png)
 
 ## How It Works
@@ -62,7 +64,6 @@ The extension uses Chrome's Declarative Net Request API to intercept and transfo
 ## Permissions
 
 - **`declarativeNetRequest`**: Allows the extension to intercept and modify network requests to remove translation parameters
-- **`storage`**: Stores user preference for optional features
 - **Host Access**: Applied to all URLs (`<all_urls>`) to ensure the extension works across all webpages
 
 ## Privacy
